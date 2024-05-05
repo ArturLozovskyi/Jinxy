@@ -7,6 +7,4 @@ file (GLOB_RECURSE COLLECTED_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp)
 
 target_sources(jinxy.lexer PRIVATE ${COLLECTED_SOURCES})
 
-# target_link_libraries(jinxy.lexer)
-
-
+# target_link_libraries(jinxy.lexer PRIVATE jinxy.ast)
